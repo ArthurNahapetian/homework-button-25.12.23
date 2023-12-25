@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Work1 from "./components/work1/index"
+import Work2 from "./components/work2/index"
+import Work3 from "./components/work3/index"
+import Work4 from "./components/work4/index"
+import Work6 from "./components/work6";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  render() {
+
+    return <>
+
+      <Work1 text={'Hello World'} />
+      <Work2 text2={'2rd varjutyun'} text21={'afagergfergf'} />
+      <Work3 text3={'3rd varjutyun'} text31={'afagergfergf'} />
+      <Work4 text4={'Bari GISHER'} />
+      <Work6/>
+
+    </>
+
+
+
+  }
+
+
+
+
 }
 
-export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+export default App
